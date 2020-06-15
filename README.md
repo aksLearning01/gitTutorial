@@ -59,3 +59,107 @@ Following the above command will "unstage" the specified file from Git's staging
 
 git checkout -- file-name
 Following the above command will back out any changes made to the specified file and replace it with the version last committed in Git
+
+
+
+History and File Management Commands
+Git History / File Management Commands
+ 
+
+Lecture Command Listing -- History
+git log
+git help log
+git log --oneline --graph --decorate --color
+ 
+
+Lecture Command Listing -- Removing Files
+pwd
+git status
+mate debug.log
+ls
+git status
+git add .
+git status
+git commit -m "adding log file that really does not belong here"
+clear
+git status
+git rm debug.log
+ls
+git status
+git commit -m "removing log file"
+clear
+mate info.log
+ls
+git add info.log
+git commit -m "adding info log"
+git status
+clear
+ls
+rm info.log
+ls
+git status
+git add .
+git add -u
+clear
+git status
+git commit -m "Removing info.log"
+ 
+
+Lecture Command Listing -- Moving Files
+ls
+mkdir web
+ls
+git mv index.html web
+cd web/
+ll
+pwd
+cd ..
+ls
+git status
+git commit -m "Moving index.html file to web folder"
+clear
+ 
+
+Lecture Command Listing -- Ignoring Files
+mate application.log
+ls
+git status
+mate .iitignore
+git status
+ls -a
+git add .gitignore
+clear
+git status
+git commit -m "adding ignore file"
+ 
+
+## Command Reference
+Seeing Repository History
+
+git log
+git log --oneline --graph --decorate --color
+Git's log command displays the repository's history in reverse chronological order. The no-params version displays the standard view.
+
+Git log options from above: --oneline Compacts log data on to one line, abbreviating the SHA1 hash --graph Adds asterisk marks and pipes next to each commit to show the branching graph lines --decorate Adds the markers for branch names and tags next to corresponding commits --color Adds some color to the output -- nice to have, depending on the operating system
+Removing a file using Git
+
+git rm file-name
+Removing a file using Terminal
+
+rm file-name
+This removes the file outside Git's knowledge
+
+Updating Git's Index (staging area)
+
+git add -u
+The -u parameter will recursively update Git's staging area regarding deleted/moved files outside of Git.
+
+Making a directory (folder)
+
+mkdir folder-name
+The mkdir command is a nearly universal command for creating a directory/folder.
+
+Making a directory (folder)
+
+git mv source destination
+The git mv command will move the source (file or folder) to the destination with Git.
