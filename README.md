@@ -163,3 +163,29 @@ Making a directory (folder)
 
 git mv source destination
 The git mv command will move the source (file or folder) to the destination with Git.
+
+
+## SSH Authentication Commands
+ 
+
+Lecture Command Listing
+cd ~
+cd .ssh
+mkdir .ssh
+cd .ssh
+pwd
+ssh-keygen -t rsa -C "jason@jasongtaylor.com"
+mate id_rsa.pub
+ssh -T git@github.com
+ 
+
+Command Reference
+Generating an SSH Key
+
+ssh-keygen -t rsa -C "your.name@your-company.com"
+Use your actual email address in the example above.
+
+Verify SSH authentication
+
+ssh -T git@github.com
+Above command uses ssh to connect to GitHub over the SSH protocol.
