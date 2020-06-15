@@ -62,17 +62,16 @@ Following the above command will back out any changes made to the specified file
 
 
 
-History and File Management Commands
-Git History / File Management Commands
+## Git History / File Management Commands
  
 
-Lecture Command Listing -- History
+ Command Listing -- History
 git log
 git help log
 git log --oneline --graph --decorate --color
  
 
-Lecture Command Listing -- Removing Files
+ Command Listing -- Removing Files
 pwd
 git status
 mate debug.log
@@ -105,7 +104,7 @@ git status
 git commit -m "Removing info.log"
  
 
-Lecture Command Listing -- Moving Files
+ Command Listing -- Moving Files
 ls
 mkdir web
 ls
@@ -119,8 +118,7 @@ git status
 git commit -m "Moving index.html file to web folder"
 clear
  
-
-Lecture Command Listing -- Ignoring Files
+Command Listing -- Ignoring Files
 mate application.log
 ls
 git status
@@ -191,7 +189,6 @@ ssh -T git@github.com
 Above command uses ssh to connect to GitHub over the SSH protocol.
 
 ## Git Remote Commands
- 
 
  Command Listing
 git status
