@@ -1,19 +1,19 @@
-#Git Starting Commands
+# Git Starting Commands
  
 
-##Command Listing - Fresh Start
+## Command Listing - Fresh Start
 pwd
 cd projects/
 git init git-demo
 
 
-##Command Listing - Start with Existing Project
+## Command Listing - Start with Existing Project
 pwd
 cd website/
 ls
 git init
 
-##Command Reference
+## Command Reference
 Present Workding Directory
 
 pwd
@@ -26,7 +26,7 @@ git init [project-name]
 project-name parameter is optional. If not supplied, Git will initialize the current directory.
 
 
-##Command Listing
+## Command Listing
 pwd
 ls
 mate README.md
