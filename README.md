@@ -189,3 +189,44 @@ Verify SSH authentication
 
 ssh -T git@github.com
 Above command uses ssh to connect to GitHub over the SSH protocol.
+
+## Git Remote Commands
+ 
+
+ Command Listing
+git status
+git remote add origin git@github.com:scm-ninja/git-demo.git
+git remote -v
+git push -u origin master
+git push origin master
+ls
+cd web/
+mate index.html
+clear
+git commit -am "Updating index page for GH"
+git status
+git pull origin master
+git push origin master
+ 
+
+Command Reference
+Creating a remote repository reference
+
+git remote add remote-name remote-repository-location
+Using git remote add command allows us to associate a remote repository. Normally, you want to paste in the full URL for the remote repository given to you by your Git host (GitHub). By convention, the first or primary remote repository is named origin.
+
+List Git's Remotes
+
+git remote -v
+The git remote command lists the names of all the remote repositories and the -v parameter (verbose) will display the full URL of the remote repository for each remote name listed
+
+Send Changes to Remote
+
+git push -u remote-name branch-name
+git push remote-name branch-name
+The git push sends all your local changes (commits) on branch branch-name to the remote named remote-name. The -u parameter is needed the first time you push a branch to the remote.
+
+Receive Changes from Remote
+
+git pull remote-name branch-name
+The git pull receives all your remote changes (commits) from the remote named remote-name and on branch branch-name.
